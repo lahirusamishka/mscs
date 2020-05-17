@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="690.0" prefWidth="1219.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.mscs.controller.AccessoriesFormController">
+   <children>
+      <JFXTextField fx:id="txtItemCode" layoutX="153.0" layoutY="401.0" prefHeight="25.0" prefWidth="335.0" AnchorPane.topAnchor="430.0" />
+      <JFXTextField fx:id="txtItemBrand" layoutX="153.0" layoutY="436.0" prefHeight="25.0" prefWidth="335.0" AnchorPane.topAnchor="460.0" />
+      <JFXTextField fx:id="txtDescription" layoutX="153.0" layoutY="471.0" prefHeight="25.0" prefWidth="335.0" AnchorPane.topAnchor="490.0" />
+      <JFXTextField fx:id="txtQty" layoutX="153.0" layoutY="506.0" prefHeight="25.0" prefWidth="335.0" AnchorPane.topAnchor="520.0" />
+      <JFXComboBox fx:id="txtcmboWarranty" layoutX="153.0" layoutY="541.0" prefHeight="25.0" prefWidth="335.0" AnchorPane.topAnchor="550.0" />
+      <JFXTextField fx:id="txtUnitPrice" layoutX="152.0" layoutY="576.0" prefHeight="25.0" prefWidth="335.0" AnchorPane.topAnchor="580.0" />
+      <JFXTextField fx:id="txtSalePrice" layoutX="152.0" layoutY="611.0" prefHeight="25.0" prefWidth="335.0" AnchorPane.topAnchor="610.0" />
+      <JFXButton buttonType="RAISED" layoutX="535.0" layoutY="604.0" onMouseClicked="#btnItemUpdateAction" prefHeight="37.0" prefWidth="105.0" styleClass="btnSave" stylesheets="@../style/all_style.css" text="UPDATE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <Label layoutX="52.0" layoutY="406.0" prefHeight="25.0" prefWidth="92.0" text="Item Code  -" AnchorPane.topAnchor="430.0">
+         <font>
+            <Font name="Franklin Gothic Medium" size="13.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblItems" layoutX="24.0" layoutY="32.0" prefHeight="361.0" prefWidth="1185.0">
+         <columns>
+            <TableColumn fx:id="clmItemId" prefWidth="182.0" text="Item Code" />
+            <TableColumn fx:id="clmItembrand" prefWidth="220.0" text="Item Brand" />
+            <TableColumn fx:id="clmDescription" prefWidth="204.0" text="Description" />
+            <TableColumn fx:id="clmQty" prefWidth="134.0" text="Qty" />
+            <TableColumn fx:id="clmWarranty" prefWidth="174.0" text="Warranty" />
+            <TableColumn fx:id="clmUnitPrice" prefWidth="147.0" text="Unit Price" />
+            <TableColumn fx:id="clmSalePrice" prefWidth="123.0" text="Sale Price" />
+         </columns>
+      </TableView>
+      <Label layoutX="52.0" layoutY="506.0" prefHeight="25.0" prefWidth="80.0" text="QTY  -" AnchorPane.topAnchor="520.0">
+         <font>
+            <Font name="Franklin Gothic Medium" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="541.0" prefHeight="25.0" prefWidth="69.0" text="Warranty  -" AnchorPane.topAnchor="550.0">
+         <font>
+            <Font name="Franklin Gothic Medium" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="471.0" prefHeight="25.0" prefWidth="80.0" text="Description  -" AnchorPane.topAnchor="490.0">
+         <font>
+            <Font name="Franklin Gothic Medium" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="576.0" prefHeight="25.0" prefWidth="69.0" text="Unit Price  -" AnchorPane.topAnchor="580.0">
+         <font>
+            <Font name="Franklin Gothic Medium" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="436.0" prefHeight="25.0" prefWidth="80.0" text="Item Brand  -" AnchorPane.topAnchor="460.0">
+         <font>
+            <Font name="Franklin Gothic Medium" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="52.0" layoutY="611.0" prefHeight="25.0" prefWidth="92.0" text="Sale Price -" AnchorPane.topAnchor="610.0">
+         <font>
+            <Font name="Franklin Gothic Medium" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="24.0" layoutY="14.0" prefHeight="19.0" prefWidth="1185.0" style="-fx-background-color: #4c7f7f;" text="   Accessories List" textFill="#e4e4e4">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

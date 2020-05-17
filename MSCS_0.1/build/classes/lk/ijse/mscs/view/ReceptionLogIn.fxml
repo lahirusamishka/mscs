@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" accessibleRole="IMAGE_VIEW" prefHeight="574.0" prefWidth="396.0" style="-fx-background-color: #233a3a;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.mscs.controller.ReceptionLogInController">
+   <children>
+      <StackPane fx:id="stackPane3" layoutX="3.0" layoutY="3.0" prefHeight="568.0" prefWidth="389.0" styleClass="stackPane" stylesheets="@../style/all_style.css">
+         <children>
+            <BorderPane prefHeight="200.0" prefWidth="200.0">
+               <center>
+                  <JFXTabPane BorderPane.alignment="CENTER">
+                     <tabs>
+                        <Tab id="tabs" text="          RECEPTION          ">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" style="-fx-background-color: #A9A9A9;">
+                                 <children>
+                                    <ImageView fitHeight="553.0" fitWidth="1000.0" layoutX="-341.0" layoutY="-17.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="-341.0" AnchorPane.topAnchor="-17.0">
+                                       <image>
+                                          <Image url="@../img/website-login-background.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <JFXButton buttonType="RAISED" layoutX="45.0" layoutY="225.0" onMouseClicked="#btnNextActionReception" prefHeight="30.0" prefWidth="300.0" styleClass="nextButton" stylesheets="@../style/all_style.css" text="LOG IN" textFill="#151b16" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="45.0">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton buttonType="RAISED" layoutX="43.0" layoutY="339.0" onMouseClicked="#btnBackActionReception" prefHeight="30.0" prefWidth="303.0" styleClass="backButton" stylesheets="@../style/all_style.css" text="CANCEL" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="45.0">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <Label layoutX="151.0" layoutY="460.0" text="Forgot Password" textFill="#9a9595" underline="true" AnchorPane.bottomAnchor="55.0">
+                                       <font>
+                                          <Font name="System Bold" size="11.0" />
+                                       </font>
+                                    </Label>
+                                    <JFXTextField fx:id="txtUserNameR" focusColor="WHITE" labelFloat="true" layoutX="46.0" layoutY="226.0" prefHeight="33.0" prefWidth="300.0" promptText="Enter User Name" style="-fx-background-color: #808080;" unFocusColor="BLACK" AnchorPane.bottomAnchor="274.0" AnchorPane.leftAnchor="46.0" AnchorPane.topAnchor="226.0">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                       <tooltip>
+                                          <Tooltip text="enter user name" />
+                                       </tooltip>
+                                    </JFXTextField>
+                                    <JFXPasswordField fx:id="txtPasswordR" focusColor="WHITE" labelFloat="true" layoutX="46.0" layoutY="287.0" prefHeight="33.0" prefWidth="300.0" promptText="Enter Password" style="-fx-background-color: #808080;" AnchorPane.bottomAnchor="213.0">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </JFXPasswordField>
+                                    <ImageView fitHeight="21.0" fitWidth="25.0" layoutX="23.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="280.0">
+                                       <image>
+                                          <Image url="@../img/man-user.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="23.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="219.0">
+                                       <image>
+                                          <Image url="@../img/house-key.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="86.0" fitWidth="114.0" layoutX="153.0" layoutY="94.0" opacity="0.79" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="353.0" AnchorPane.leftAnchor="153.0">
+                                       <image>
+                                          <Image url="@../img/icon-security1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="218.0" fitWidth="222.0" layoutX="91.0" layoutY="-81.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="91.0" AnchorPane.topAnchor="-81.0">
+                                       <image>
+                                          <Image url="@../img/c7de24fc-0c8c-4df3-ac74-95602b515692.png" />
+                                       </image>
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                    </ImageView>
+                                    <Label fx:id="lblErrorMsgreception" layoutX="180.0" layoutY="322.0" prefHeight="16.0" prefWidth="180.0" textFill="#ea0a28" AnchorPane.bottomAnchor="194.0" AnchorPane.leftAnchor="180.0">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lblErrorMsgreception1" layoutX="180.0" layoutY="260.0" prefHeight="16.0" prefWidth="180.0" textFill="#ea0a28" AnchorPane.bottomAnchor="256.0" AnchorPane.leftAnchor="180.0">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutX="133.0" layoutY="53.0" prefHeight="21.0" prefWidth="124.0" text="Reception LogIn" textFill="WHITE" AnchorPane.leftAnchor="133.0" AnchorPane.rightAnchor="132.0">
+                                       <font>
+                                          <Font name="Microsoft JhengHei UI Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Separator layoutX="103.0" layoutY="65.0" prefHeight="2.0" prefWidth="116.0" AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="65.0" />
+                                    <Separator layoutX="103.0" layoutY="83.0" prefHeight="3.0" prefWidth="117.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="64.0" />
+                                    <Separator orientation="VERTICAL" prefHeight="442.0" prefWidth="0.0" AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="66.0" />
+                                    <Separator layoutX="373.0" layoutY="65.0" orientation="VERTICAL" prefHeight="442.0" prefWidth="6.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="65.0" />
+                                    <Separator layoutX="13.0" layoutY="506.0" prefHeight="3.0" prefWidth="362.0" AnchorPane.bottomAnchor="24.0" />
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                        <Tab id="tabs" text="              ADMIN          ">
+                           <content>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="391.0" style="-fx-background-color: #A9A9A9;">
+                                 <children>
+                                    <ImageView fitHeight="553.0" fitWidth="1249.0" layoutX="-266.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="-341.0" AnchorPane.topAnchor="-17.0">
+                                       <image>
+                                          <Image url="@../img/website-login-background.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <JFXButton buttonType="RAISED" layoutX="43.0" layoutY="370.0" onMouseClicked="#btnNextActionAdmin" prefHeight="30.0" prefWidth="300.0" styleClass="nextButton" stylesheets="@../style/all_style.css" text="LOG IN" textFill="#151b16" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="45.0">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXButton buttonType="RAISED" layoutX="43.0" layoutY="424.0" onMouseClicked="#btnBackActionAdmin" prefHeight="30.0" prefWidth="303.0" styleClass="backButton" stylesheets="@../style/all_style.css" text="CANCEL" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="45.0">
+                                       <font>
+                                          <Font size="17.0" />
+                                       </font>
+                                    </JFXButton>
+                                    <JFXTextField fx:id="txtUserNameA" focusColor="WHITE" labelFloat="true" layoutX="56.0" layoutY="209.0" prefHeight="33.0" prefWidth="300.0" promptText="Enter User Name" style="-fx-background-color: #808080;" unFocusColor="#363535" AnchorPane.bottomAnchor="274.0" AnchorPane.leftAnchor="46.0" AnchorPane.topAnchor="226.0">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                       <tooltip>
+                                          <Tooltip text="enter user name" />
+                                       </tooltip>
+                                    </JFXTextField>
+                                    <JFXPasswordField fx:id="txtPasswordA" focusColor="WHITE" labelFloat="true" layoutX="56.0" layoutY="274.0" prefHeight="33.0" prefWidth="300.0" promptText="Enter Password" style="-fx-background-color: #808080;" AnchorPane.bottomAnchor="213.0" AnchorPane.leftAnchor="46.0">
+                                       <font>
+                                          <Font name="System Bold" size="14.0" />
+                                       </font>
+                                    </JFXPasswordField>
+                                    <ImageView fitHeight="86.0" fitWidth="114.0" layoutX="169.0" layoutY="83.0" opacity="0.79" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="353.0" AnchorPane.leftAnchor="153.0">
+                                       <image>
+                                          <Image url="@../img/icon-security1.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="21.0" fitWidth="25.0" layoutX="23.0" layoutY="213.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="275.0">
+                                       <image>
+                                          <Image url="@../img/man-user.png" />
+                                       </image>
+                                    </ImageView>
+                                    <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="23.0" layoutY="278.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="219.0">
+                                       <image>
+                                          <Image url="@../img/house-key.png" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="152.0" layoutY="462.0" text="Forgot Password" textFill="#9a9595" underline="true" AnchorPane.bottomAnchor="55.0">
+                                       <font>
+                                          <Font name="System Bold" size="11.0" />
+                                       </font>
+                                    </Label>
+                                    <Label fx:id="lblErrorMsgAdmin" layoutX="56.0" layoutY="315.0" prefHeight="16.0" prefWidth="180.0" textFill="#ea0a28" AnchorPane.bottomAnchor="194.0" AnchorPane.leftAnchor="180.0">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font></Label>
+                                    <Label fx:id="lblErrorMsgAdmin1" layoutX="57.0" layoutY="260.0" prefHeight="16.0" prefWidth="180.0" textFill="#ea0a28" AnchorPane.bottomAnchor="256.0" AnchorPane.leftAnchor="180.0">
+                                       <font>
+                                          <Font name="System Bold" size="12.0" />
+                                       </font></Label>
+                                    <Label layoutX="148.0" layoutY="53.0" prefHeight="21.0" prefWidth="96.0" text="Admin LogIn" textFill="WHITE">
+                                       <font>
+                                          <Font name="Microsoft JhengHei UI Bold" size="15.0" />
+                                       </font>
+                                    </Label>
+                                    <Separator layoutX="246.0" layoutY="64.0" prefHeight="3.0" prefWidth="130.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="64.0" />
+                                    <Separator layoutX="12.0" layoutY="64.0" prefHeight="2.0" prefWidth="129.0" AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="64.0" />
+                                    <Separator layoutX="12.0" layoutY="66.0" orientation="VERTICAL" prefHeight="442.0" prefWidth="0.0" AnchorPane.leftAnchor="12.0" />
+                                    <Separator layoutX="373.0" layoutY="66.0" orientation="VERTICAL" prefHeight="442.0" prefWidth="6.0" AnchorPane.rightAnchor="10.0" />
+                                    <Separator layoutX="13.0" layoutY="506.0" prefHeight="3.0" prefWidth="362.0" AnchorPane.bottomAnchor="24.0" />
+                                    <ImageView fitHeight="218.0" fitWidth="222.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="91.0" AnchorPane.topAnchor="-81.0">
+                                       <image>
+                                          <Image url="@../img/c7de24fc-0c8c-4df3-ac74-95602b515692.png" />
+                                       </image>
+                                       <effect>
+                                          <DropShadow />
+                                       </effect>
+                                    </ImageView>
+                                 </children>
+                              </AnchorPane>
+                           </content>
+                        </Tab>
+                     </tabs>
+                  </JFXTabPane>
+               </center>
+            </BorderPane>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

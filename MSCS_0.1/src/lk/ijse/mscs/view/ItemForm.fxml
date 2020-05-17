@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="690.0" prefWidth="1219.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.mscs.controller.ItemFormController">
+   <children>
+      <JFXTextField fx:id="txtItemCode" labelFloat="true" layoutX="35.0" layoutY="377.0" onKeyReleased="#btnActKey" prefHeight="25.0" prefWidth="335.0" promptText="Item Code" AnchorPane.topAnchor="377.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtItemBrand" labelFloat="true" layoutX="35.0" layoutY="422.0" onKeyReleased="#btnActKey" prefHeight="25.0" prefWidth="335.0" promptText="Item Brand " AnchorPane.topAnchor="422.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtQty" labelFloat="true" layoutX="36.0" layoutY="468.0" onKeyReleased="#btnActKey" prefHeight="27.0" prefWidth="335.0" promptText="Qty" AnchorPane.topAnchor="468.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="cmbWarranty" labelFloat="true" layoutX="36.0" layoutY="513.0" onKeyReleased="#btnActKey" prefHeight="25.0" prefWidth="335.0" promptText="Warranty" AnchorPane.topAnchor="513.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtUnitPrice" labelFloat="true" layoutX="35.0" layoutY="558.0" onKeyReleased="#btnActKey" prefHeight="25.0" prefWidth="335.0" promptText="Unit Price" AnchorPane.topAnchor="558.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtSalePrice" labelFloat="true" layoutX="35.0" layoutY="603.0" onKeyReleased="#btnActKey" prefHeight="25.0" prefWidth="335.0" promptText="Sale Price" AnchorPane.topAnchor="603.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></JFXTextField>
+      <JFXTextField labelFloat="true" layoutX="403.0" layoutY="567.0" prefHeight="27.0" prefWidth="88.0" promptText="Description" visible="false" AnchorPane.topAnchor="567.0">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font></JFXTextField>
+      <JFXButton fx:id="btnUpdate" buttonType="RAISED" disable="true" layoutX="455.0" layoutY="578.0" onKeyPressed="#btnUpdateAction" onMouseClicked="#btnItemUpdateAction" prefHeight="54.0" prefWidth="148.0" styleClass="btnSave" stylesheets="@../style/all_style.css" text="UPDATE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+         <tooltip>
+            <Tooltip text="Update Mobile Infomation" />
+         </tooltip>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="902.0" layoutY="596.0" prefHeight="37.0" prefWidth="165.0" styleClass="btnDelete" stylesheets="@../style/all_style.css" text="DELETE" visible="false">
+         <tooltip>
+            <Tooltip text="Delete  Select  Mobile phone" />
+         </tooltip></JFXButton>
+      <TableView fx:id="tblGRN" layoutX="9.0" layoutY="24.0" prefHeight="307.0" prefWidth="1201.0">
+         <columns>
+            <TableColumn fx:id="clmGRN" prefWidth="109.99996948242188" text="Item Code" />
+            <TableColumn fx:id="clmBatch" minWidth="0.0" prefWidth="0.0" text="Batch ID" />
+            <TableColumn fx:id="clmSupplierOrderId" minWidth="0.0" prefWidth="0.0" text="SU.O. ID" />
+            <TableColumn fx:id="clmBrand" prefWidth="126.00003051757812" text="Brand" />
+            <TableColumn fx:id="clmDescription" prefWidth="136.0" text="Description" />
+            <TableColumn fx:id="clmOrderQty" prefWidth="92.0" text="O.Qty" />
+            <TableColumn fx:id="clmOrderDate" minWidth="0.0" prefWidth="0.0" text="O.Date" />
+            <TableColumn fx:id="clmSupplierId" minWidth="0.0" prefWidth="0.0" text="S.ID" />
+            <TableColumn fx:id="clmDeliverDate" minWidth="0.0" prefWidth="0.0" text="D.Date" />
+            <TableColumn fx:id="clmDeliverQTY" minWidth="0.0" prefWidth="0.0" text="D.QTY" />
+            <TableColumn fx:id="clmWarranty" prefWidth="264.0" text="Warranty" />
+            <TableColumn fx:id="clmUnitPrice" prefWidth="274.0" text="Unit Price" />
+            <TableColumn fx:id="clmSalePrice" prefWidth="201.0" text="Sale Price" />
+         </columns>
+      </TableView>
+      <Label layoutX="10.0" layoutY="5.0" prefHeight="19.0" prefWidth="1201.0" style="-fx-background-color: #157f87;" text="  Mobile Phones Table" textFill="#e4e4e4">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Separator layoutX="623.0" layoutY="345.0" orientation="VERTICAL" prefHeight="327.0" prefWidth="6.0" />
+      <Separator layoutX="8.0" layoutY="346.0" orientation="VERTICAL" prefHeight="327.0" prefWidth="6.0" />
+      <Separator layoutX="10.0" layoutY="346.0" prefHeight="3.0" prefWidth="1004.0" style="-fx-background-color: ffffff;" />
+      <Separator layoutX="10.0" layoutY="672.0" prefHeight="3.0" prefWidth="1004.0" style="-fx-background-color: ffffff;" />
+      <JFXTextArea fx:id="txtAreaDiscription" focusColor="BLACK" layoutX="671.0" layoutY="437.0" prefHeight="179.0" prefWidth="275.0" promptText="Description Area">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </JFXTextArea>
+      <Label layoutX="671.0" layoutY="407.0" prefHeight="17.0" prefWidth="175.0" text="Description">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="947.0" layoutY="584.0" prefHeight="38.0" prefWidth="75.0" text="Price">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblPrice" layoutX="1022.0" layoutY="586.0" prefHeight="38.0" prefWidth="148.0" textFill="#7c7c7c">
+         <font>
+            <Font name="System Bold" size="26.0" />
+         </font>
+      </Label>
+      <Separator layoutX="1013.0" layoutY="346.0" orientation="VERTICAL" prefHeight="327.0" prefWidth="6.0" />
+   </children>
+</AnchorPane>

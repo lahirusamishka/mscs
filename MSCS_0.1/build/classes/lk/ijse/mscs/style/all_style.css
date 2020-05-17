@@ -1,0 +1,175 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+
+}
+.setup-button{
+    -fx-background-color: #2f4f4f;
+    -fx-text-fill: white;
+    -fx-background-radius: 20;
+    
+}
+
+.setup-button :hover,
+.setup-button:pressed{
+    -fx-background-color: #1c2f2f;
+    -fx-text-fill: black;
+    -fx-background-radius: 20;
+}
+.backButton{
+    -fx-background-color:#d33737;
+    -fx-text-fill: white;
+    -fx-background-radius:5;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+   
+}
+.backButton :hover,.backButton:hover{
+    -fx-background-color: #b73838;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+}
+.anchorpane{
+    -fx-background-radius: 5;
+}
+.nextButton{
+    -fx-background-color:  #2b6c77;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+}
+.nextButton :hover,.nextButton:hover{
+    -fx-background-color: #225760;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+    -fx-font-weight: bold;
+    -fx-font-size: 15px;
+    
+}
+
+
+.HomeButtons{
+    -fx-background-color: #304c4c;
+    -fx-text-fill: white;
+      -fx-font-weight: bold;
+    -fx-font-size: 12px;
+}
+
+.HomeButtons :hover,
+.HomeButtons:pressed{
+    -fx-background-color: #2a4343;
+    -fx-text-fill: white;
+     -fx-font-weight: bold;
+    -fx-font-size: 12px;
+}
+
+
+
+#HomeButtons:active{
+    
+    -fx-background-color: #35D02E;
+    -fx-text-fill: white;
+     -fx-font-weight: bold;
+    -fx-font-size: 12px;
+}
+
+
+
+ .btnDelete{
+     -fx-background-color: #d10e0e;
+    -fx-text-fill: white;
+     -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 5;
+ }
+ 
+.btnDelete:hover,
+.btnDelete:pressed{
+    -fx-background-color: #b70b0b;
+    -fx-text-fill: white;
+     -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 5;
+}
+.btnSave{
+     -fx-background-color: #12cc2e;
+    -fx-text-fill: white;
+     -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 5;
+}
+.btnSave:hover,
+.btnSave:pressed{
+    -fx-background-color: #0c9b21;
+    -fx-text-fill: white;
+     -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 5;
+}
+.btnSearch{
+    -fx-background-color: #304c4c;
+    -fx-text-fill: white;
+     -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 5;
+}
+.btnSearch:hover,
+.btnSearch:pressed{
+    -fx-background-color: #447272;
+    -fx-text-fill: white;
+     -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 5;
+}
+.btnUpdate{
+    -fx-background-color: #00BFC0;
+    -fx-text-fill: white;
+     -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 5;
+}
+.btnUpdate:hover,
+.btnUpdate:pressed{
+    -fx-background-color: #009C9D;
+    -fx-text-fill: white;
+     -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 5;
+}
+.btnNew{
+    -fx-background-color: #304c4c;
+    -fx-text-fill: white;
+     -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 5;
+}
+.btnNew:hover,
+.btnNew:pressed{
+    -fx-background-color: #447272;
+    -fx-text-fill: white;
+     -fx-font-weight: bold;
+    -fx-font-size: 14px;
+    -fx-background-radius: 5;
+}
+.btnSelected{
+    -fx-background-color: #1c2f2f;
+   
+}
+.stackPane{
+   -fx-background-radius: 5;
+}
+#tabReception:pressed{
+     -fx-background-color: #225760;
+    
+     
+}
+
+
+/*#tabs{
+     -fx-background-color: #428282;
+}*/

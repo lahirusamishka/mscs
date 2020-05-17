@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="MSCS_0.1_Client.jnlp">
+  <information>
+    <title>MSCS_0.1_Client</title>
+    <vendor>samishka</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="MSCS_0.1_Client.jar" size="3196060" download="eager" />
+    <jar href="lib\MSCS_0.1_Common.jar" size="64132" download="eager" />
+    <jar href="lib\controlsfx-8.40.14.jar" size="1215643" download="eager" />
+    <jar href="lib\ijse-jasper-reports-util-by-sb.jar" size="9232819" download="eager" />
+    <jar href="lib\jfoenix.jar" size="2383838" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="MSCS_0.1_Client" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="lk.ijse.mscs.startup.MSCS_01"  name="MSCS_0.1_Client" />
+  <update check="always"/>
+</jnlp>

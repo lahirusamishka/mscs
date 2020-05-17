@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPaneMain" prefHeight="748.0" prefWidth="1366.0" style="-fx-background-color: #0f3535;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.mscs.controller.AdminHomeController">
+   <children>
+      <AnchorPane fx:id="rootPane" layoutX="144.0" layoutY="46.0" prefHeight="690.0" prefWidth="1219.0" style="-fx-background-color: #EAEDED;" />
+      <VBox layoutX="-3.0" layoutY="46.0" prefHeight="690.0" prefWidth="147.0" style="-fx-background-color: #304c4c;">
+         <children>
+            <ImageView fitHeight="149.0" fitWidth="286.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/c7de24fc-0c8c-4df3-ac74-95602b515692.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="1.0" contrast="0.02" hue="-0.24" saturation="-0.48" />
+               </effect>
+               <cursor>
+                  <Cursor fx:constant="DEFAULT" />
+               </cursor>
+            </ImageView>
+            <JFXButton buttonType="RAISED" onMouseClicked="#btnHomeAction" prefHeight="86.0" prefWidth="145.0" styleClass="HomeButtons" stylesheets="@../style/all_style.css" text="     Home          ">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Menu_24px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="View Home" />
+               </tooltip>
+            </JFXButton>
+            <JFXButton id="HomeButtons" fx:id="btnAddItem" buttonType="RAISED" onAction="#colorAction" onMouseClicked="#AddItemAction" prefHeight="86.0" prefWidth="145.0" styleClass="HomeButtons" stylesheets="@../style/all_style.css" text="  Phones          " textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Smartphone%20Tablet_24px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="View Mobile Phones" />
+               </tooltip></JFXButton>
+            <JFXButton id="HomeButtons" fx:id="btnAddReception" buttonType="RAISED" onAction="#colorAction" onMouseClicked="#AddReceptionAction" prefHeight="86.0" prefWidth="145.0" styleClass="HomeButtons" stylesheets="@../style/all_style.css" text="  Reception      " textFill="WHITE">
+               <graphic>
+                  <ImageView fitHeight="32.0" fitWidth="30.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Checked%20User%20Male_24px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Add New Reception" />
+               </tooltip></JFXButton>
+            <JFXButton fx:id="btnGRN" buttonType="RAISED" onAction="#colorAction" onMouseClicked="#btnGRNAction" prefHeight="86.0" prefWidth="145.0" styleClass="HomeButtons" stylesheets="@../style/all_style.css" text="  GRN               ">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/File_24px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Add Doods Received Note" />
+               </tooltip></JFXButton>
+            <JFXButton id="HomeButtons" fx:id="btnSupplier" buttonType="RAISED" onAction="#colorAction" onMouseClicked="#btnSupplierAction" prefHeight="86.0" prefWidth="145.0" styleClass="HomeButtons" stylesheets="@../style/all_style.css" text="  Supplier        ">
+               <graphic>
+                  <ImageView fitHeight="35.0" fitWidth="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Checked%20User%20Male_24px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Add New Supplier" />
+               </tooltip></JFXButton>
+            <JFXButton id="HomeButtons" fx:id="btnSupplierOrder" buttonType="RAISED" onAction="#colorAction" onMouseClicked="#btnSupplierOrderAction" prefHeight="86.0" prefWidth="145.0" styleClass="HomeButtons" stylesheets="@../style/all_style.css" text=" Supplier Order">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Shopping%20Cart_24px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+               <tooltip>
+                  <Tooltip text="Add new Supplier Order" />
+               </tooltip></JFXButton>
+            <JFXButton buttonType="RAISED" onMouseClicked="#btnAboutAction" prefHeight="86.0" prefWidth="145.0" styleClass="HomeButtons" stylesheets="@../style/all_style.css" text="     About         ">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Info_24px.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </JFXButton>
+            <JFXButton id="HomeButtons" fx:id="btnAddRepar" onAction="#colorAction" onMouseClicked="#AddReparAction" prefHeight="86.0" prefWidth="145.0" styleClass="HomeButtons" stylesheets="@../style/all_style.css" text="  Add Repar      " textFill="WHITE" visible="false">
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="25.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/Support_24px.png" />
+                     </image>
+                  </ImageView>
+               </graphic></JFXButton>
+         </children>
+      </VBox>
+      <JFXButton buttonType="RAISED" layoutX="1084.0" layoutY="15.0" prefHeight="32.0" prefWidth="104.0" style="-fx-background-color: #304c4c;" text="LOG OUT" textFill="WHITE" visible="false" AnchorPane.rightAnchor="180.0" AnchorPane.topAnchor="15.0">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logout.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <Label fx:id="setTimeAndDate" contentDisplay="CENTER" layoutX="222.0" layoutY="15.0" prefHeight="32.0" prefWidth="618.0" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="19.0" />
+         </font>
+      </Label>
+      <JFXButton buttonType="RAISED" layoutX="1258.0" layoutY="8.0" onMouseClicked="#btnLogOutAction" prefHeight="32.0" prefWidth="48.0" style="-fx-background-color: #304c4c;" text="." textFill="#304c4c">
+         <graphic>
+            <ImageView fitHeight="24.0" fitWidth="39.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logout.png" />
+               </image>
+            </ImageView>
+         </graphic>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="1311.0" layoutY="8.0" onMouseClicked="#btnClose" prefHeight="32.0" prefWidth="48.0" style="-fx-background-color: #304c4c;" text="." textFill="#304c4c">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+         <graphic>
+            <ImageView fitHeight="23.0" fitWidth="22.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/close.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </JFXButton>
+   </children>
+</AnchorPane>

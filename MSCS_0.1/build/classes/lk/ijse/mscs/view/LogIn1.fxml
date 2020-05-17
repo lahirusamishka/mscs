@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tooltip?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="552.0" prefWidth="407.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.mscs.controller.LogIn1Controller">
+   <children>
+      <AnchorPane layoutX="10.0" layoutY="10.0" minHeight="0.0" minWidth="0.0" prefHeight="533.0" prefWidth="387.0" style="-fx-background-color: #A9A9A9;">
+         <children>
+            <JFXButton buttonType="RAISED" layoutX="45.0" layoutY="225.0" onMouseClicked="#btnNextActionReception" prefHeight="30.0" prefWidth="300.0" styleClass="nextButton" stylesheets="@../style/all_style.css" text="LOG IN" textFill="#151b16" AnchorPane.bottomAnchor="150.0" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="45.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="43.0" layoutY="339.0" onMouseClicked="#btnBackActionReception" prefHeight="30.0" prefWidth="303.0" styleClass="backButton" stylesheets="@../style/all_style.css" text="CANCEL" AnchorPane.bottomAnchor="90.0" AnchorPane.leftAnchor="45.0" AnchorPane.rightAnchor="45.0">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </JFXButton>
+            <Label layoutX="151.0" layoutY="460.0" text="Forgot Password" textFill="#9a9595" underline="true" AnchorPane.bottomAnchor="55.0">
+               <font>
+                  <Font name="System Bold" size="11.0" />
+               </font>
+            </Label>
+            <JFXTextField fx:id="txtUserNameR" focusColor="#447272" labelFloat="true" layoutX="46.0" layoutY="228.0" prefHeight="31.0" prefWidth="300.0" promptText="Enter User Name" style="-fx-background-color: #808080;" unFocusColor="BLACK" AnchorPane.bottomAnchor="274.0" AnchorPane.leftAnchor="46.0" AnchorPane.topAnchor="228.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="enter user name" />
+               </tooltip>
+            </JFXTextField>
+            <JFXPasswordField fx:id="txtPasswordR" focusColor="#447272" labelFloat="true" layoutX="46.0" layoutY="287.0" prefHeight="31.0" prefWidth="300.0" promptText="Enter Password" style="-fx-background-color: #808080;" unFocusColor="BLACK" AnchorPane.bottomAnchor="213.0">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font>
+            </JFXPasswordField>
+            <ImageView fitHeight="21.0" fitWidth="25.0" layoutX="23.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="280.0">
+               <image>
+                  <Image url="@../img/man-user.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="21.0" fitWidth="21.0" layoutX="23.0" layoutY="290.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="219.0">
+               <image>
+                  <Image url="@../img/house-key.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="86.0" fitWidth="114.0" layoutX="153.0" layoutY="94.0" opacity="0.79" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="353.0" AnchorPane.leftAnchor="153.0">
+               <image>
+                  <Image url="@../img/icon-security1.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="lblErrorMsgreception" layoutX="180.0" layoutY="322.0" prefHeight="16.0" prefWidth="180.0" textFill="#ea0a28" AnchorPane.bottomAnchor="194.0" AnchorPane.leftAnchor="180.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label fx:id="lblErrorMsgreception1" layoutX="180.0" layoutY="260.0" prefHeight="16.0" prefWidth="180.0" textFill="#ea0a28" AnchorPane.bottomAnchor="256.0" AnchorPane.leftAnchor="180.0">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label layoutX="133.0" layoutY="53.0" prefHeight="21.0" prefWidth="124.0" text="Reception LogIn" textFill="WHITE" AnchorPane.leftAnchor="133.0" AnchorPane.rightAnchor="132.0">
+               <font>
+                  <Font name="Microsoft JhengHei UI Bold" size="15.0" />
+               </font>
+            </Label>
+            <Separator layoutX="103.0" layoutY="65.0" prefHeight="2.0" prefWidth="116.0" AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="65.0" />
+            <Separator layoutX="103.0" layoutY="83.0" prefHeight="3.0" prefWidth="117.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="64.0" />
+            <Separator orientation="VERTICAL" prefHeight="442.0" prefWidth="0.0" AnchorPane.leftAnchor="12.0" AnchorPane.topAnchor="66.0" />
+            <Separator layoutX="373.0" layoutY="65.0" orientation="VERTICAL" prefHeight="442.0" prefWidth="6.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="65.0" />
+            <Separator layoutX="13.0" layoutY="506.0" prefHeight="3.0" prefWidth="362.0" AnchorPane.bottomAnchor="24.0" />
+            <ImageView fitHeight="218.0" fitWidth="222.0" layoutX="89.0" layoutY="-78.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/c7de24fc-0c8c-4df3-ac74-95602b515692.png" />
+               </image>
+               <effect>
+                  <ColorAdjust brightness="-1.0" contrast="-0.31" hue="0.24" saturation="-1.0" />
+               </effect>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

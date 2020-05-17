@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="690.0" prefWidth="1219.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.mscs.controller.OperatorFormController">
+   <children>
+      <TableView fx:id="tblSupplier" layoutX="23.0" layoutY="323.0" prefHeight="341.0" prefWidth="1184.0">
+         <columns>
+            <TableColumn fx:id="clmOperatorId" prefWidth="95.0" text="Operator Id" />
+            <TableColumn fx:id="clmNIC" prefWidth="132.0" text="NIC" />
+            <TableColumn fx:id="clmName" prefWidth="255.0" text="Name" />
+            <TableColumn fx:id="clmAddress" minWidth="9.0" prefWidth="227.0" text="Address" />
+            <TableColumn fx:id="clmContact" prefWidth="179.0" text="Contact" />
+            <TableColumn fx:id="clmEmail" prefWidth="307.0" text="Email" />
+         </columns>
+      </TableView>
+      <JFXTextField fx:id="txtOperatorId" layoutX="160.0" layoutY="53.0" prefHeight="25.0" prefWidth="360.0" />
+      <JFXTextField fx:id="txtAddress" layoutX="160.0" layoutY="143.0" prefHeight="25.0" prefWidth="360.0" />
+      <JFXTextField fx:id="txtName" layoutX="160.0" layoutY="113.0" prefHeight="25.0" prefWidth="360.0" />
+      <JFXTextField fx:id="txtNIC" layoutX="160.0" layoutY="83.0" prefHeight="25.0" prefWidth="360.0" />
+      <JFXTextField fx:id="txtContact" layoutX="160.0" layoutY="173.0" prefHeight="25.0" prefWidth="360.0" />
+      <JFXTextField fx:id="txtEmail" layoutX="160.0" layoutY="203.0" prefHeight="25.0" prefWidth="360.0" />
+      <JFXButton layoutX="348.0" layoutY="249.0" onMouseClicked="#btnDeleteAction" prefHeight="37.0" prefWidth="80.0" styleClass="btnDelete" stylesheets="@../style/all_style.css" text="DELETE" />
+      <JFXButton layoutX="440.0" layoutY="249.0" onMouseClicked="#btnSaveAction" prefHeight="37.0" prefWidth="80.0" styleClass="btnSave" stylesheets="@../style/all_style.css" text="SAVE" />
+      <JFXButton layoutX="254.0" layoutY="249.0" onMouseClicked="#btnUpdateAction" prefHeight="37.0" prefWidth="80.0" styleClass="btnUpdate" stylesheets="@../style/all_style.css" text="UPDATE" />
+      <JFXButton layoutX="160.0" layoutY="249.0" onMouseClicked="#btnNew" prefHeight="37.0" prefWidth="80.0" styleClass="btnNew" stylesheets="@../style/all_style.css" text="NEW" />
+      <Label layoutX="47.0" layoutY="51.0" prefHeight="25.0" prefWidth="92.0" text="Operator ID-">
+         <font>
+            <Font name="Franklin Gothic Medium" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="203.0" prefHeight="25.0" prefWidth="80.0" text="Email  -">
+         <font>
+            <Font name="Franklin Gothic Medium" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="113.0" prefHeight="25.0" prefWidth="106.0" text="Name  -">
+         <font>
+            <Font name="Franklin Gothic Medium" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="48.0" layoutY="143.0" prefHeight="25.0" prefWidth="69.0" text="Address">
+         <font>
+            <Font name="Franklin Gothic Medium" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="173.0" prefHeight="25.0" prefWidth="53.0" text="Contact  -">
+         <font>
+            <Font name="Franklin Gothic Medium" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="80.0" prefHeight="25.0" prefWidth="106.0" text="NIC  -">
+         <font>
+            <Font name="Franklin Gothic Medium" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="23.0" layoutY="304.0" prefHeight="19.0" prefWidth="1184.0" style="-fx-background-color: #4c7f7f;" text="   Operator Table" textFill="#e4e4e4">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="690.0" prefWidth="1219.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.mscs.controller.ReceptionFormController">
+   <children>
+      <JFXTextField fx:id="txtReceptionId" labelFloat="true" layoutX="48.0" layoutY="40.0" prefHeight="25.0" prefWidth="360.0" promptText="Reception ID" AnchorPane.leftAnchor="48.0" AnchorPane.topAnchor="40.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtNIC" labelFloat="true" layoutX="48.0" layoutY="85.0" prefHeight="25.0" prefWidth="360.0" promptText="NIC" AnchorPane.topAnchor="85.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtName" labelFloat="true" layoutX="48.0" layoutY="130.0" prefHeight="25.0" prefWidth="360.0" promptText="Name" AnchorPane.topAnchor="130.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtAddress" labelFloat="true" layoutX="48.0" layoutY="176.0" prefHeight="25.0" prefWidth="360.0" promptText="Address" AnchorPane.topAnchor="176.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtContact" labelFloat="true" layoutX="48.0" layoutY="221.0" prefHeight="25.0" prefWidth="360.0" promptText="Contact" AnchorPane.topAnchor="221.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXTextField>
+      <JFXTextField fx:id="txtEmail" labelFloat="true" layoutX="48.0" layoutY="265.0" prefHeight="25.0" prefWidth="360.0" promptText="Email" AnchorPane.topAnchor="265.0">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></JFXTextField>
+      <JFXButton buttonType="RAISED" layoutX="756.0" layoutY="261.0" onMouseClicked="#btnSaveUpdateAction" prefHeight="37.0" prefWidth="80.0" styleClass="btnSave" stylesheets="@../style/all_style.css" text="SAVE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="662.0" layoutY="261.0" onMouseClicked="#btndeleteAction" prefHeight="37.0" prefWidth="80.0" styleClass="btnDelete" stylesheets="@../style/all_style.css" text="DELETE" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="569.0" layoutY="261.0" onMouseClicked="#btnUpdateAction" prefHeight="37.0" prefWidth="80.0" styleClass="btnUpdate" stylesheets="@../style/all_style.css" text="UPDATE" />
+      <TableView fx:id="tblReception" layoutX="6.0" layoutY="345.0" prefHeight="308.0" prefWidth="1207.0">
+         <columns>
+            <TableColumn fx:id="columnReceptionId" prefWidth="88.0" text="Reception ID" />
+            <TableColumn fx:id="columnNIC" prefWidth="139.0" text="NIC" />
+            <TableColumn fx:id="columnName" prefWidth="301.0" text="Name" />
+            <TableColumn fx:id="columnAddress" prefWidth="300.0" text="Address" />
+            <TableColumn fx:id="columnContact" prefWidth="129.0" text="Contact" />
+            <TableColumn fx:id="columnEmail" prefWidth="249.0" text="Email" />
+         </columns>
+      </TableView>
+      <Label layoutX="6.0" layoutY="326.0" prefHeight="19.0" prefWidth="1207.0" style="-fx-background-color: #4c7f7f;" text="  Reception Table" textFill="#e4e4e4">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="37.0" fitWidth="32.0" layoutX="510.0" layoutY="264.0" onMouseClicked="#btnPrintReceptions" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@../img/printer%20(1).png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="32.0" fitWidth="32.0" layoutX="455.0" layoutY="264.0" onMouseClicked="#btnNewAction" opacity="0.78" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../img/update-arrows.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="48.0" layoutY="1.0" prefHeight="19.0" prefWidth="176.0" text="  Reception Form" textFill="#323232">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Separator layoutX="423.0" layoutY="9.0" orientation="VERTICAL" prefHeight="308.0" prefWidth="4.0" />
+   </children>
+</AnchorPane>

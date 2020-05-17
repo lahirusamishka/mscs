@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="690.0" prefWidth="1219.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.mscs.controller.SupplierFormController">
+   <children>
+      <TableView fx:id="tblSupplier" layoutX="13.0" layoutY="313.0" prefHeight="341.0" prefWidth="1196.0">
+        <columns>
+          <TableColumn fx:id="clmSupplierId" prefWidth="95.0" text="Supplier Id" />
+          <TableColumn fx:id="clmNIC" prefWidth="132.0" text="NIC" />
+            <TableColumn fx:id="clmName" prefWidth="255.0" text="Name" />
+            <TableColumn fx:id="clmAddress" minWidth="9.0" prefWidth="227.0" text="Address" />
+            <TableColumn fx:id="clmContact" prefWidth="179.0" text="Contact" />
+            <TableColumn fx:id="clmEmail" prefWidth="307.0" text="Email" />
+        </columns>
+      </TableView>
+      <JFXTextField fx:id="txtSupplierId" layoutX="150.0" layoutY="43.0" prefHeight="25.0" prefWidth="360.0" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="43.0" />
+      <JFXTextField fx:id="txtAddress" layoutX="150.0" layoutY="133.0" prefHeight="25.0" prefWidth="360.0" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="133.0" />
+      <JFXTextField fx:id="txtName" layoutX="150.0" layoutY="103.0" prefHeight="25.0" prefWidth="360.0" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="103.0" />
+      <JFXTextField fx:id="txtNIC" layoutX="150.0" layoutY="73.0" prefHeight="25.0" prefWidth="360.0" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="73.0" />
+      <JFXTextField fx:id="txtContact" layoutX="150.0" layoutY="163.0" prefHeight="25.0" prefWidth="360.0" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="163.0" />
+      <JFXTextField fx:id="txtEmail" layoutX="150.0" layoutY="193.0" prefHeight="25.0" prefWidth="360.0" AnchorPane.leftAnchor="150.0" AnchorPane.topAnchor="193.0" />
+      <JFXButton layoutX="338.0" layoutY="239.0" onMouseClicked="#btnDeleteAction" prefHeight="37.0" prefWidth="80.0" styleClass="btnDelete" stylesheets="@../style/all_style.css" text="DELETE" />
+      <JFXButton layoutX="430.0" layoutY="239.0" onMouseClicked="#btnSaveAction" prefHeight="37.0" prefWidth="80.0" styleClass="btnSave" stylesheets="@../style/all_style.css" text="SAVE" />
+      <JFXButton layoutX="244.0" layoutY="239.0" onMouseClicked="#btnUpdateAction" prefHeight="37.0" prefWidth="80.0" styleClass="btnUpdate" stylesheets="@../style/all_style.css" text="UPDATE" />
+      <JFXButton layoutX="150.0" layoutY="239.0" onMouseClicked="#btnNew" prefHeight="37.0" prefWidth="80.0" styleClass="btnNew" stylesheets="@../style/all_style.css" text="NEW" />
+      <Label layoutX="37.0" layoutY="41.0" prefHeight="25.0" prefWidth="92.0" text="Supplier ID-">
+         <font>
+            <Font name="Franklin Gothic Medium" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="193.0" prefHeight="25.0" prefWidth="80.0" text="Email  -">
+         <font>
+            <Font name="Franklin Gothic Medium" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="103.0" prefHeight="25.0" prefWidth="106.0" text="Name  -">
+         <font>
+            <Font name="Franklin Gothic Medium" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="38.0" layoutY="133.0" prefHeight="25.0" prefWidth="69.0" text="Address">
+         <font>
+            <Font name="Franklin Gothic Medium" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="163.0" prefHeight="25.0" prefWidth="53.0" text="Contact  -">
+         <font>
+            <Font name="Franklin Gothic Medium" size="13.0" />
+         </font>
+      </Label>
+      <Label layoutX="37.0" layoutY="70.0" prefHeight="25.0" prefWidth="106.0" text="NIC  -">
+         <font>
+            <Font name="Franklin Gothic Medium" size="13.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
